@@ -1,0 +1,148 @@
+.reviews-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 38px 30px 40px;
+  background-color: #fff9fb;
+  margin-top: 125px;
+  text-align: center;
+  position: relative; /* vacibdir! oxların düzgün yerləşməsi üçün */
+}
+
+/* Başlıq */
+.reviews-container h2 {
+  font-size: 40px;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+/* Wrapper – görünən hissəni gizlədir */
+.reviews-grid-wrapper {
+  max-width: 820px;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+/* Scroll edilən sıra – yan-yana düzülür */
+.reviews-grid {
+  display: flex;
+  gap: 30px;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  padding-bottom: 10px;
+}
+
+.reviews-grid::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hər bir review box */
+.review-item {
+  flex: 0 0 250px;
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  transition: transform 0.2s ease;
+}
+
+.review-item:hover {
+  transform: translateY(-5px);
+}
+
+.review-item strong {
+  display: block;
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  color: #222;
+}
+
+.review-item p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Scroll düymələri */
+.scroll-button {
+  position: absolute;
+  top: 205px;
+  transform: translateY(-50%);
+  background-color: #ffffff; /* pink background */
+  color: white;
+  border: none;
+  border-radius: 50%; /* circle */
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  z-index: 10;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0; /* içlik sıfır olsun */
+}
+
+.scroll-button:hover {
+  background-color: #e04360;
+}
+
+.scroll-button img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+  pointer-events: none; /* klik img-ə deyil, button-a getsin */
+}
+
+.scroll-left {
+  left: 150px; /* container-in tam kənarına qoyulur */
+}
+
+.scroll-right {
+  right: 150px;
+}
+
+/* Form hissəsi */
+.review-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 17px;
+  width: 100%;
+  max-width: 400px;
+  margin-top: 10px;
+}
+
+.review-form input,
+.review-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.review-form textarea {
+  height: 80px;
+  resize: none;
+}
+
+.review-form button {
+  padding: 10px 20px;
+  background-color: #e04360;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin-bottom: 35px;
+  width: 120px;
+}
+
+.review-form button:hover {
+  background-color: #e04360;
+}

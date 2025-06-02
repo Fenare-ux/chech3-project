@@ -1,0 +1,29 @@
+.orders-container {
+  max-width: 800px;
+  margin: 100px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.order-block {
+  margin-bottom: 30px;
+  padding: 16px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  color: black;
+}
+
+.order-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  font-size: 16px;
+  background-color: #fff;
+}
+h4{
+    font-size: 24px;
+    margin-bottom: 15px;
+}

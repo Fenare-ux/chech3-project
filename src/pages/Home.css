@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.home-container {
+  padding: 80px 5vw 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  font-family: "Roboto", sans-serif;
+  background-color: #fff0f5;
+  margin-top: 20px;
+}
+
+.fade-in {
+  animation: fadeInSlide 1s ease forwards;
+  opacity: 0;
+  transform: translateY(-30px); /* Başlanğıcda bir az yuxarıda */
+}
+
+@keyframes fadeInSlide {
+  to {
+    opacity: 1;
+    transform: translateY(0); /* Orijinal yerinə gəlsin */
+  }
+}
+
+.fade-in-img {
+  animation: fadeInSlide 1s ease forwards;
+  opacity: 0;
+  transform: translateX(30px);
+}
+
+
+/* Hero bölməsi */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.hero-left {
+margin-left: 40px;
+}
+
+
+.hero-left h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.hero-left p {
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+
+.hero-left button {
+  background-color: #ff4d6d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+  width: 170px;
+  margin-bottom: 40px;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+.hero-left button:hover {
+  background-color: #e93254;
+}
+
+.social-links {
+  margin-top: 10px;
+  font-size: 24px;
+  display: flex;
+  
+}
+
+.social-links img {
+width: 30px;
+height: 30px;
+}
+
+
+.social-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  height: 20px;
+}
+
+.social-links a:hover {
+  color: #ff4d6d;
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.hero-right img {
+  max-width: 570px;
+  border-radius: 10px;
+  width: 570px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  margin-left: 120px;
+
+}
+
+.hero-right img:hover {
+  transform: scale(1.05); /* və ya rotate, translate də ola bilər */
+}
