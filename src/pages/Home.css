@@ -13,7 +13,7 @@
 .fade-in {
   animation: fadeInSlide 1s ease forwards;
   opacity: 0;
-  transform: translateY(-30px); /* Başlanğıcda bir az yuxarıda */
+  /* transform: translateY(-30px); */
 }
 
 @keyframes fadeInSlide {
